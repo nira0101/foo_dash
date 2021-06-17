@@ -1,0 +1,146 @@
+@use "../base/color";
+@use "../base/font";
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+@media only screen and (max-width: $breakpoint-tablet) {
+  .dash,
+  .bartender,
+  .que {
+    font-size: 14px;
+  }
+  .beer_status {
+    font-size: 15px;
+  }
+
+  .storage_status {
+    h3 {
+      font-size: 14px;
+    }
+    h4 {
+      font-size: 10px;
+    }
+  }
+  .status_grid {
+    grid-template-rows: repeat(3, 0.4fr) 2.2fr;
+  }
+
+  .card_employ > div {
+    h2 {
+      font-size: 15px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+    h4 {
+      font-size: 12px;
+    }
+  }
+  .employee_photo {
+    height: 9vw;
+    width: 9vw;
+  }
+  .fa-user {
+    font-size: 42px;
+  }
+
+  .card_employ > div {
+    padding: 6px;
+  }
+  .bar_info_time {
+    height: 18vw;
+    width: 18vw;
+  }
+}
+@media only screen and (max-width: $breakpoint-mobile) {
+  .foo-logo {
+    width: 23%;
+  }
+  .dash,
+  .bartender,
+  .que {
+    font-size: 10px;
+  }
+
+  label {
+    width: 37px;
+    height: 18px;
+  }
+  label::after {
+    top: 0.5px;
+    left: 0px;
+    width: 19px;
+    height: 17.5px;
+  }
+  .color-text h3 {
+    font-size: 14px;
+  }
+  .beer_status {
+    font-size: 11px;
+    margin-top: 6vw;
+  }
+
+  .storage_status {
+    h3 {
+      font-size: 11px;
+    }
+    h4 {
+      font-size: 9px;
+    }
+  }
+
+  #wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 1.3fr repeat(2, 1fr);
+    gap: 10px 10px;
+
+    #beer_storage {
+      grid-area: 1 / 1 / 2 / 2;
+      margin-top: 2vw;
+    }
+    #bartender {
+      grid-area: 2 / 1 / 3 / 2;
+      margin-top: 2vw;
+    }
+    #queue_status {
+      grid-area: 3 / 1 / 4 / 2;
+    }
+    #bar {
+      grid-area: 4 / 1 / 5 / 2;
+    }
+  }
+  .status_grid {
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 0.4fr);
+  }
+  .card_employ {
+    flex-direction: row;
+  }
+  .employee_photo {
+    height: 17vw;
+    width: 17vw;
+  }
+  .card_employ > div {
+    margin: 2.5vw;
+  }
+
+  .cards_que > article {
+    h3 {
+      font-size: 13px;
+    }
+    h4 {
+      font-size: 13px;
+    }
+    h5 {
+      font-size: 13px;
+    }
+  }
+
+  .bar_info_time {
+    height: 32vw;
+    width: 32vw;
+    font-size: 23px;
+  }
+}

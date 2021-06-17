@@ -1,0 +1,67 @@
+@use "../base/font";
+@use "../base/color";
+
+.foo-logo {
+  width: 17%;
+  padding: 1vw;
+}
+
+.logo h1 {
+  padding: 1vw;
+  font-family: font.$monoton;
+  font-size: 51px;
+  font-weight: 550;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  padding: 1vw;
+}
+
+.beer_img {
+  width: 100%;
+  background-color: var(--background-color);
+}
+.s_img {
+  width: 100%;
+}
+
+.digital-clock {
+  font-size: 29px; /*To change the size of the numbers*/
+  width: 20vw; /*To change the widt of the clock*/
+  text-align: center;
+
+  border-radius: 50%; /*To change how round the edges are*/
+  background-color: var(--secondary-color); /*To change the background color of the clock*/
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: var(--font-color-two);
+  box-shadow: 9px 9px 17px 1px rgb(0 0 0 / 22%);
+}
+
+.bar_info_time {
+  font-size: 29px; /*To change the size of the numbers*/
+  width: 14vw; /*To change the widt of the clock*/
+  text-align: center;
+  border: 1px solid #588157;
+  border-radius: 50%; /*To change how round the edges are*/
+  background-color: var(--background-color); /*To change the background color of the clock*/
+  height: 14vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: var(--font-color);
+  box-shadow: 9px 9px 17px 1px rgb(0 0 0 / 22%);
+}
+.dashboard {
+  background-color: var(--background-color);
+}
+
+.hide {
+  display: none;
+}

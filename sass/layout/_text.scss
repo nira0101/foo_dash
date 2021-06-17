@@ -1,0 +1,114 @@
+@use "../base/color";
+@use "../base/font";
+.storage_status {
+  h3 {
+    font-family: font.$monteserrat;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-bottom: 1vw;
+  }
+  h4 {
+    font-family: font.$raleway;
+    font-size: 16px;
+  }
+}
+
+h2 {
+  justify-content: center;
+}
+.beer_status {
+  font-family: font.$raleway;
+  color: var(--font-color);
+  margin-left: 1vw;
+  text-transform: uppercase;
+  font-size: 21px;
+  justify-content: center;
+  display: flex;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+
+.bartender {
+  font-family: font.$raleway;
+  color: var(--font-color);
+  margin-left: 1vw;
+  text-transform: uppercase;
+  font-size: 21px;
+  justify-content: center;
+  display: flex;
+  padding: 1vw;
+  color: var;
+}
+.queue {
+  font-family: font.$raleway;
+  color: var(--font-color);
+  margin-left: 1vw;
+  text-transform: uppercase;
+  font-size: 21px;
+  justify-content: center;
+  display: flex;
+  background-color: darkgray;
+}
+
+.que {
+  font-family: font.$raleway;
+  color: var(--font-color);
+  font-size: 21px;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+  padding: 1vw;
+}
+
+.card_employ > div {
+  h2 {
+    font-family: font.$raleway;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--font-color-two);
+    margin-bottom: 0.5vw;
+  }
+  h3 {
+    font-family: font.$raleway;
+    font-size: 16px;
+    color: var(--font-color-two);
+  }
+  h4 {
+    font-family: font.$raleway;
+    font-size: 16px;
+    color: var(--font-color-two);
+  }
+}
+
+.cards_que > article {
+  h3 {
+    font-family: font.$raleway;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    padding: 0.3vw;
+    margin-bottom: 1.5vw;
+  }
+  h4 {
+    font-family: font.$monteserrat;
+    font-size: 16px;
+    color: var(--font-color);
+  }
+  h5 {
+    font-family: font.$monteserrat;
+    font-size: 16px;
+    color: var(--font-color);
+  }
+}
+.in_que {
+  background-color: var(--secondary-color);
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.dash {
+  font-size: 20px;
+  font-family: font.$raleway;
+  font-weight: bold;
+  color: var(--font-color);
+  padding: 1vw;
+}

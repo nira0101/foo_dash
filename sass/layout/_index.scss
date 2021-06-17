@@ -1,0 +1,18 @@
+@forward "header";
+@forward "grid";
+@forward 'cards';
+@forward 'text';
+@forward 'theme';
+@forward 'responsive';
+
+@use "../base/color";
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
+}

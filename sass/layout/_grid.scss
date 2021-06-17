@@ -1,0 +1,99 @@
+@use "../base/color";
+@use "../base/font";
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr 1fr;
+  grid-template-rows: 1fr 1.4fr 0.6fr;
+  gap: 15px 15px;
+  margin: 0 5vw;
+
+  #beer_storage {
+    grid-area: 1 / 1 / 5 / 4;
+  }
+  #bartender {
+    grid-area: 2 / 1 / 4 / 2;
+  }
+  #queue_status {
+    grid-area: 2 / 2 / 3 / 4;
+  }
+  #bar {
+    grid-area: 3 / 2 / 4 / 4;
+  }
+}
+
+header {
+  display: flex;
+  background-color: var(--primary-color);
+  justify-content: center;
+}
+
+#beer_storage {
+  margin: 1vw auto;
+  display: grid;
+  grid-gap: 5px;
+}
+
+.status_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 0.4fr) 2.2fr;
+  gap: 0px 0px;
+
+  border-radius: 5px;
+}
+#worker_status_app {
+  display: grid;
+  /*  margin: auto; */
+  grid-template-columns: 1fr;
+
+  margin-left: 10px;
+  align-content: flex-start;
+}
+#queue_status {
+  background-color: var(--background-color);
+  border-radius: 5px;
+}
+#bar {
+  margin: 5px;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+.cards_bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px 10px;
+}
+
+#que_container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 0.5fr);
+  gap: 10px 10px;
+}
+
+.bar_info_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: font.$monteserrat;
+    margin-top: 1vw;
+    color: var(--font-color-two);
+  }
+}
+.bar_info_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: font.$monteserrat;
+    margin-top: 1vw;
+    color: var(--font-color-two);
+  }
+}

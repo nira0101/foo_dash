@@ -1,0 +1,74 @@
+@use "../base/color";
+@use "../base/font";
+.cards_que {
+  display: flex;
+  background-color: var(--queue-color);
+  /*  width: auto; */
+  margin: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 5px;
+
+  align-items: center;
+  overflow-wrap: none;
+  border-radius: 3px;
+  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
+}
+
+.card_employ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 10px;
+  gap: 10px;
+  background-color: rgb(245, 241, 237);
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22);
+}
+
+.storage_status {
+  background-color: var(--secondary-color);
+  margin: 5px 10px;
+  padding: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.employee_photo {
+  display: flex;
+  background-color: var(--background-color);
+
+  height: 12vw;
+  width: 12vw;
+  padding: 0vw;
+  display: flex;
+  border-radius: 50%;
+  margin: 10px;
+}
+.card_employ > div {
+  display: flex;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  justify-content: center;
+  /*  box-shadow: 9px 9px 17px 1px rgba(0, 0, 0, 0.22); */
+  flex-direction: column;
+  width: 14vw;
+  margin: 1vw;
+}
+
+.employee_photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-user {
+  font-size: 50px;
+  color: var(--icon-color);
+}
